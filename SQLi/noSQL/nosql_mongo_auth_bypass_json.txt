@@ -1,0 +1,8 @@
+{"username":{"$ne":null},"password":{"$ne":null}}
+{"username":{"$ne":"foo"},"password":{"$ne":"bar"}}
+{"username":{"$gt":""},"password":{"$gt":""}}
+{"username":{"$gt":undefined},"password":{"$gt":undefined}}
+{"username":{"$in":["admin","root","administrator"]},"password":{"$gt":""}}
+{"user":{"$in":["admin","root","test"]}}
+{"username":{"$exists":true},"password":{"$ne":null}}
+{"user":{"$nin":["admin"]},"pass":{"$ne":"test"}}

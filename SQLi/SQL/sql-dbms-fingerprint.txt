@@ -1,0 +1,10 @@
+conv('a',16,2)=conv('a',16,2)
+connection_id()=connection_id()
+BINARY_CHECKSUM(123)=BINARY_CHECKSUM(123)
+@@CONNECTIONS=@@CONNECTIONS
+ROWNUM=ROWNUM
+RAWTOHEX('AB')=RAWTOHEX('AB')
+5::int=5
+pg_client_encoding()=pg_client_encoding()
+sqlite_version()=sqlite_version()
+last_insert_rowid()=last_insert_rowid()

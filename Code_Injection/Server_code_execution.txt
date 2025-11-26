@@ -1,0 +1,12 @@
+print(7*7)
+__import__("sys").stdout.write("OK")
+eval("print(7*7)")
+puts 7*7
+Console.WriteLine(7*7);
+System.out.println(7*7);
+console.log(7*7);
+<?php echo 7*7; ?>
+<?= 7*7 ?>
+<% out.println(7*7); %>
+<%= 7*7 %>
+${7*7}

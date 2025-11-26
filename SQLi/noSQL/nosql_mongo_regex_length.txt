@@ -1,0 +1,5 @@
+username[$ne]=toto&password[$regex]=.{1}
+username[$ne]=toto&password[$regex]=.{2}
+username[$ne]=toto&password[$regex]=.{3}
+username[$ne]=toto&password[$regex]=.{4}
+username[$ne]=toto&password[$regex]=.{5}

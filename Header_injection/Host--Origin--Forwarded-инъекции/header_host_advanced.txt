@@ -6,3 +6,6 @@ evil.com#victim.example.com
 evil.com%23victim.example.com
 evil.com:80%0d%0aX-Injected-Host: 1
 attacker.example.com%0d%0aX-Forwarded-For: 127.0.0.1
+victim.example.com.evil.com/
+evil.com/victim.example.com
+evil.com?host=victim.example.com

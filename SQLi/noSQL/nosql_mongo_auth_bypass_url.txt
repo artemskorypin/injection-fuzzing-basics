@@ -1,0 +1,8 @@
+username[$ne]=toto&password[$ne]=toto
+login[$regex]=a.*&pass[$ne]=lol
+login[$gt]=admin&login[$lt]=test&pass[$ne]=1
+login[$nin][]=admin&login[$nin][]=test&pass[$ne]=toto
+login[$regex]=.*&pass[$ne]=invalid
+username[$exists]=true&password[$ne]=null
+username[$regex]=^a.*$&password[$ne]=x
+username[$nin][]=admin&username[$nin][]=test&pass[$ne]=toto

