@@ -1,0 +1,36 @@
+# Common SMTP-related form field names
+bcc
+cc
+reply-to
+reply_to
+replyto
+in-reply-to
+in_reply_to
+inreplyto
+return-path
+return_path
+returnpath
+sender
+from
+from_addr
+from_address
+to
+to_addr
+to_address
+subject
+subject_line
+mail_headers
+headers
+additional_headers
+x-mailer
+x_priority
+priority
+
+# Variants that explicitly include "header"
+header
+header_name
+header_value
+email_header
+smtp_header
+mail_header
+

