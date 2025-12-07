@@ -28,4 +28,6 @@ a=eval;b=alert;a(b('1'));//
 Function('alert(1)')()
 setTimeout('alert(1)')
 ";eval(atob('YWxlcnQoMSk='));//"
+"};global._JSON_INJECTED=1;//
+"};this._json_injected=1;//
 

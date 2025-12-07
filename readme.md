@@ -28,18 +28,21 @@
 
 ## Структура
 
-### `SQLi/`
+### `SQL/`
 
-- `SQL/` — SQL-инъекции по СУБД (MySQL, MSSQL, Oracle, PostgreSQL) + общие словари:
-  - базовые / blind / WAF-bypass payload’ы,
-  - `sqli_general`, `sqli_passive`, `sqli_active`,
-  - вспомогательные словари: распознавание СУБД, Unicode/whitespace, polyglot,
-  - `paths_unix` / `paths_win` — полезные file-path’ы для чтения через SQLi.
-- `noSQL/` — MongoDB-инъекции:
-  - `$where`, операторы (`$ne`, `$in`, `$regex`),
-  - auth bypass (JSON/urlencoded),
-  - regex для длины/данных,
-  - JS-пейлоады для DOM/JS-контекста.
+- отдельные файлы под MySQL, MSSQL, Oracle, PostgreSQL;
+- `sqli_general`, `sqli_passive`, `sqli_active` — общие словари для детекта;
+- WAF-bypass payload’ы, unicode/whitespace-обходы, polyglot-пейлоады;
+- `paths_unix` / `paths_win` — полезные пути для чтения/утечек через SQLi;
+- словари для распознавания типа СУБД по ошибкам/поведению.
+
+### `NoSQL/`
+
+- `nosql_mongo_where.txt` — инъекции через `"$where"` и встроенный JS;
+- `nosql_mongo_operators.txt` — `$ne`, `$gt`, `$lt`, `$in`, `$nin`, `$exists` и т.п.;
+- `nosql_mongo_auth_bypass_url.txt` / `nosql_mongo_auth_bypass_json.txt` — обход логина в URL/JSON;
+- `nosql_mongo_regex_length.txt` / `nosql_mongo_regex_data.txt` — извлечение длины и данных через `$regex`;
+- `nosql_mongo_misc_js.txt` — разные JS-пэйлоады для Mongo-контекста.
 
 ### `XSS/`
 
@@ -57,7 +60,6 @@
 
 ### `Code_Injection/`
 
-- `Code_Injection_JSON_basic.txt` — JSON-инъекции / proto-pollution / выход в JS-код.
 - `Server_code_execution.txt` — безопасные “test RCE” (print/console.log/echo 7*7) для разных языков.
 - `SSTI/` — полиглотный SSTI и детект движков (Jinja/Twig/Freemarker/ERB/Razor и др.).
 
